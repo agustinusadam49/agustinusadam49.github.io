@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Payment</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body id="login-body">
+        <header>
+            <h3 id="logo-web">Nge.Game</h3>
+            <nav>   
+                <ul>
+                    <a href="index-1.html"><li>Home</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="banner-1">
+            <img id="picture" src="img/gow_fhd.jpg"/>
+            <img id="picture" src="img/wd2_4k.jpg"/>
+            <img id="picture" src="img/uncharted_4.jpg"/>
+            <img id="picture" src="img/hzd.jpg"/>
+        </section>
+
+        <section class="banner-2">
+            <img id="picture" src="img/fifa20.jpg"/>
+            <img id="picture" src="img/tw3.jpg"/>
+            <img id="picture" src="img/gt_sport.jpg"/>
+            <img id="picture" src="img/tlou_2.jpg"/>
+        </section>
+
+        <div class="body-box">
+            <div>
+                <h1>Payment</h1>
+            </div>
+            <form action="./successful-transaction.html" method="">
+                <div id="payment">
+                    <div>
+                        <label for="name-on-card">Name on Card</label>
+                        <br>
+                        <input type="text" name="name-on-card" id="name-on-card" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="creditcard">Credit Card</label>
+                        <br>
+                        <input type="text" name="credit-card" id="creditcard" pattern="[0-9]{14,16}" required>
+                        <br>
+                        <label style="color: gray; font-size: small;">Please input numbers (14-16 characters)</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="valid-date">Valid Until (MM/YY)</label>
+                        <br>
+                        <input type="text" minlength="1" maxlength="5" name="valid-date" id="valid-date" required>
+                        <br><br>
+                        <label for="cvv">CVV</label>
+                        <br>
+                        <input type="text" pattern="[0-9]{1,3}" name="cvv" id="cvv" required>
+                        <br>
+                        <label style="color: gray; font-size: small;">Please input numbers (3 characters)</label>
+                    </div>
+                </div>
+
+                <div id="checkboxform">
+                    <br>
+                    <input type="checkbox" name="agreement" id="agreement" required>
+                    <label for="agreement">I agree with the terms and conditions</label>
+                </div>
+
+                <div id="submit">
+                    <br>
+                    <input class ="tombol2" type="submit" value="Pay">
+                </div>
+            </form>
+        </div>
+
+        <footer id="contact">
+			<h2>Contact Us</h3>
+            <p><strong>Address:</strong> Perum Buana Margawati, Garut.</p>
+            <p><strong>Phone:</strong> 0895603484556</p>
+            <p><strong>Email:</strong> agustinusadamw@gmail.com</p>
+		</footer>
+    </body>
+
+</html>
